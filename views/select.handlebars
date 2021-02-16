@@ -1,0 +1,24 @@
+<div class="tabela">
+    <div>
+            <table>
+                <tr>
+                    <th>Ação</th>
+                    <th>CPF</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                </tr>
+
+                {{#data}}
+                <tr>
+                    <td>
+                        <a href="deletar/{{cpf}}"><button>Deletar</button></a>
+                        <a href="update/{{cpf}}"><button>Alterar</button></a>
+                    </td>
+                    <td>{{cpf}}</td>
+                    <td>{{nome}}</td>
+                    <td>{{email}}</td>
+                </tr>
+                {{/data}}
+            </table>
+    </div>
+</div>
